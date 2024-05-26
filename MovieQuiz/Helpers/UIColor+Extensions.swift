@@ -1,3 +1,8 @@
 import UIKit
 
-extension UIColor { }
+extension UIColor {
+    static var testingYellow: UIColor {
+        UIColor(named: "CustomYellow") ?? UIColor.black
+    }
+}
+
