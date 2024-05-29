@@ -10,7 +10,7 @@ import Foundation
 // структура для вопроса квиза
 struct QuizQuestion {
     // строка с названием фильма (имя файла картинки в Assets)
-    let image: String
+    let image: Data
     // строка с вопросом о рейтинге фильма
     let text: String
     // булевое значение (да/нет) - ответ на вопрос
