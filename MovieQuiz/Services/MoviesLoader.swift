@@ -12,8 +12,8 @@ protocol MoviesLoading {
 }
 
 struct MoviesLoader: MoviesLoading {
-    // нетворк-клиент для загрузки
-    private let networkClient = NetworkClient()
+    // сервис для сетевого соединения
+    var networkClient: NetworkRouting = NetworkClient()
     
     // URL метода API
     private var mostPopularMoviesUrl: URL {
